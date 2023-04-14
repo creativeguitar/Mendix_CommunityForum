@@ -1,0 +1,11 @@
+> Task :clean-excluded-jars UP-TO-DATE
+> Task :copyDeploymentArtifacts
+> Task :copyResources UP-TO-DATE
+> Task :copyUserLibs UP-TO-DATE
+> Task :unzipDataSnapshot SKIPPED
+> Task :deploy
+
+BUILD SUCCESSFUL in 2s
+4 actionable tasks: 1 executed, 3 up-to-date
+
+

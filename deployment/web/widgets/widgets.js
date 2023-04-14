@@ -1,0 +1,1 @@
+define(["CKEditorForMendix/widget/CKEditorForMendix", "CKEditorForMendix/widget/CKEditorViewerForMendix", "LabelSelect/widget/LabelSelect"], {});

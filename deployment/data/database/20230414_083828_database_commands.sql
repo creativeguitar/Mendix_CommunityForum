@@ -1,0 +1,12 @@
+ALTER TABLE "forum_module$test" RENAME TO "f7aee3b4d57b4058a1cc15215e715439";
+DROP INDEX "idx_forum_module$label_test_forum_module$test_forum_module$label";
+ALTER TABLE "forum_module$label_test" RENAME TO "bcbfcd9c1d134d349bd8b0d026ff384e";
+DELETE FROM "mendixsystem$entity"  WHERE "id" = '790fd568-51d5-4f7b-a37f-2cda27920ea0';
+DELETE FROM "mendixsystem$entityidentifier"  WHERE "id" = '790fd568-51d5-4f7b-a37f-2cda27920ea0';
+DELETE FROM "mendixsystem$sequence"  WHERE "attribute_id" IN ( SELECT "id" FROM "mendixsystem$attribute" WHERE "entity_id" = '790fd568-51d5-4f7b-a37f-2cda27920ea0' );
+DELETE FROM "mendixsystem$remote_primary_key"  WHERE "entity_id" = '790fd568-51d5-4f7b-a37f-2cda27920ea0';
+DELETE FROM "mendixsystem$attribute"  WHERE "entity_id" = '790fd568-51d5-4f7b-a37f-2cda27920ea0';
+DELETE FROM "mendixsystem$association"  WHERE "id" = 'c692cd5f-b280-4fa0-8cdb-f2491f52840e';
+DROP TABLE "f7aee3b4d57b4058a1cc15215e715439";
+DROP TABLE "bcbfcd9c1d134d349bd8b0d026ff384e";
+UPDATE "mendixsystem$version" SET "versionnumber" = '4.2', "lastsyncdate" = '20230414 08:38:28';
